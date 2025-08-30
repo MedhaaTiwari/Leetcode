@@ -1,0 +1,22 @@
+//Easy: Brute Force
+class Solution {
+public:
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+    int a=0;
+    for(int i=m; i<(m+n); i++){
+        nums1[i]=nums2[a];
+        a++;
+    }
+    for (int j = 0; j <(m+n-1); j++){
+    for(int i=0; i<(m+n-1); i++)
+    {
+        if (nums1[i]>nums1[i+1]){
+            int temp = nums1[i];
+            nums1[i]= nums1[i+1];
+            nums1[i+1]= temp;
+        }
+    }
+    }
+    }
+    
+};
