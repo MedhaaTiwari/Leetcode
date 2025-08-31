@@ -1,4 +1,5 @@
- class Solution {
+//medium: brute force
+class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
     for(int i=nums.size()-3; i>=0; i--){
